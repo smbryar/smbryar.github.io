@@ -2,7 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 40px 0;
+
+  .profile-img {
+    text-align: center;
+
+    img {
+      border: 10px solid $dark-green;
+      border-radius: 2px;
+      padding: 10px;
+    }
+  }
 
   .journey {
     margin-right: 40px;
