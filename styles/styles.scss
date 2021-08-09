@@ -1,0 +1,33 @@
+@import "variables";
+@import "hero";
+@import "journey";
+@import "like";
+
+body {
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: $off-black;
+  background-color: $off-white;
+  margin: 0 auto;
+}
+
+.page-container {
+  width: 80%;
+  margin: 0 auto;
+
+  > h2 {
+    text-align: center;
+  }
+}
+
+a,
+h2,
+h3 {
+  color: $dark-green;
+}
+
+@media only screen and (max-width: 767px) {
+  .page-container {
+    text-align: center;
+  }
+}

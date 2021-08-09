@@ -1,0 +1,24 @@
+.journey-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 40px 0;
+
+  .journey {
+    margin-right: 40px;
+  }
+
+  ol {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .journey-container {
+    flex-direction: column;
+
+    .journey {
+      margin-right: 0;
+    }
+  }
+}

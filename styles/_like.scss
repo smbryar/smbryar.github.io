@@ -1,0 +1,30 @@
+.like-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 40px;
+
+  .like-card {
+    max-width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    img {
+      object-fit: cover;
+      height: 200px;
+    }
+
+    .like-text {
+      padding: 2px 16px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .like-container {
+    flex-direction: column;
+
+    .like-card {
+      max-width: 100%;
+    }
+  }
+}
