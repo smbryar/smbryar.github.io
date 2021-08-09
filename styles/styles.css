@@ -1,0 +1,134 @@
+nav {
+  background-color: #3aafa9;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #17252a;
+}
+nav ul li {
+  float: left;
+}
+nav ul li.active {
+  background-color: #3aafa9;
+}
+nav ul li:hover {
+  background-color: #2b7a78;
+}
+nav ul li a {
+  display: block;
+  color: #feffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.hero {
+  background-color: #3aafa9;
+  height: 200px;
+  line-height: 200px;
+  margin-bottom: 40px;
+}
+.hero h1 {
+  text-align: center;
+  margin-top: 0;
+  color: #feffff;
+  font-size: 4em;
+}
+
+@media only screen and (max-width: 767px) {
+  .hero h1 {
+    font-size: 3em;
+  }
+}
+.journey-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.journey-container .profile-img {
+  text-align: center;
+}
+.journey-container .profile-img img {
+  border: 10px solid #2b7a78;
+  border-radius: 2px;
+  padding: 10px;
+}
+.journey-container .journey {
+  margin-right: 40px;
+}
+.journey-container ol {
+  text-align: left;
+}
+
+@media only screen and (max-width: 767px) {
+  .journey-container {
+    flex-direction: column;
+  }
+  .journey-container .journey {
+    margin-right: 0;
+  }
+}
+.like-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+.like-container .like-card {
+  max-width: 300px;
+  box-shadow: 0 4px 8px 0 #17252a;
+}
+.like-container .like-card img {
+  object-fit: cover;
+  height: 200px;
+}
+.like-container .like-card .like-text {
+  padding: 2px 16px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .like-container {
+    flex-direction: column;
+  }
+  .like-container .like-card {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+}
+.giphy {
+  padding: 10px;
+  width: 200px;
+}
+
+body {
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #17252a;
+  background-color: #feffff;
+  margin: 0 auto;
+}
+
+.page-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.page-container > h2 {
+  text-align: center;
+}
+
+a,
+h2,
+h3 {
+  color: #2b7a78;
+}
+
+@media only screen and (max-width: 767px) {
+  .page-container {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
