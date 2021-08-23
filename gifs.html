@@ -6,7 +6,7 @@
     <title>Cat gifs</title>
     <link rel="icon" type="image/jpg" href="img/me.jpg" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <script src="giphy.js"></script>
+    <script src="giphy.js" defer></script>
     <script src="konami.js"></script>
   </head>
   <body>
@@ -21,6 +21,10 @@
       <h1>Cat gifs</h1>
     </section>
     <section class="page-container">
+      <form onsubmit="fetchGifs(event)" id="gif-search-form">
+        Choose your gifs: <input type="text" id="gif-search-term" />
+        <button type="submit">Go</button>
+      </form>
       <section class="giphy-container"></section>
     </section>
   </body>
