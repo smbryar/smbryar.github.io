@@ -18,13 +18,14 @@
       </ul>
     </nav>
     <section class="hero">
-      <h1>Cat gifs</h1>
+      <h1>
+        <form onsubmit="fetchGifs(event)"" class="gif-search-form">
+          <input type="text" id="gif-search-term" class="gif-search-term"/>
+        </form>
+        gifs
+      </h1>
     </section>
     <section class="page-container">
-      <form onsubmit="fetchGifs(event)" id="gif-search-form">
-        Choose your gifs: <input type="text" id="gif-search-term" />
-        <button type="submit">Go</button>
-      </form>
       <section class="giphy-container"></section>
     </section>
   </body>

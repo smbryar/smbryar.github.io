@@ -1,5 +1,7 @@
 const apiKey = "9pz3h3ta7uGNedW8NC3Be57G3tic3RnQ";
 
+const initialSearchTerm = "cats";
+
 const fetchGifs = (e) => {
   e.preventDefault();
   const searchTerm = document.getElementById("gif-search-term").value;
@@ -16,7 +18,7 @@ const removeExistingGifs = () => {
 
 const fetchGifsBySearchTerm = (searchTerm) => {
   fetch(
-    `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${searchTerm}&limit=12`
+    `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${searchTerm}&limit=10`
   )
     .then((response) => response.json())
     .then((json) => {
@@ -34,4 +36,6 @@ const fetchGifsBySearchTerm = (searchTerm) => {
     .catch((error) => console.log(error));
 };
 
-fetchGifsBySearchTerm("cats");
+fetchGifsBySearchTerm(initialSearchTerm);
+document.getElementById("gif-search-term").focus();
+document.getElementById("gif-search-term").value = initialSearchTerm;

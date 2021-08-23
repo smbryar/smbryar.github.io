@@ -1,8 +1,25 @@
+.gif-search-form {
+  display: inline;
+
+  .gif-search-term {
+    font-size: 1em;
+    width: 30%;
+  }
+}
+
 .giphy-container {
   text-align: center;
 
   .giphy {
     padding: 10px;
     width: 200px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .gif-search-form {
+    .gif-search-term {
+      width: 50%;
+    }
   }
 }
