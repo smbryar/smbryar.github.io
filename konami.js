@@ -1,9 +1,11 @@
-let keysPressed = "";
+const konamiPattern = "rosebud";
+let keysPressed = konamiPattern;
 
 document.addEventListener("keypress", logKeyPress);
 document.addEventListener("keydown", logKeyDown);
 
 function logKeyPress(e) {
+  keysPressed = keysPressed.substring(1);
   keysPressed += e.key;
 
   if (keysPressed.toLowerCase().includes("rosebud")) {
@@ -34,5 +36,5 @@ const removeRotateClass = () => {
 };
 
 const resetKeysPressed = () => {
-  keysPressed = "";
+  keysPressed = konamiPattern;
 };
