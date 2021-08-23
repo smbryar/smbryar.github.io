@@ -1,22 +1,20 @@
 const konamiPattern = "rosebud";
 let keysPressed = konamiPattern;
 
-document.addEventListener("keypress", logKeyPress);
 document.addEventListener("keydown", logKeyDown);
 
-function logKeyPress(e) {
+function logKeyDown(e) {
+  if (e.key === "Escape") {
+    removeRotateClass();
+    resetKeysPressed();
+    return;
+  }
+
   keysPressed = keysPressed.substring(1);
   keysPressed += e.key;
 
   if (keysPressed.toLowerCase().includes("rosebud")) {
     addRotateClass();
-    resetKeysPressed();
-  }
-}
-
-function logKeyDown(e) {
-  if (e.key === "Escape") {
-    removeRotateClass();
     resetKeysPressed();
   }
 }
