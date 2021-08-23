@@ -103,6 +103,10 @@ nav ul li a {
   width: 200px;
 }
 
+.giphy-container {
+  align-items: center;
+}
+
 body {
   width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
