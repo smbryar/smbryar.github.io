@@ -20,14 +20,14 @@ function logKeyDown(e) {
 }
 
 const addRotateClass = () => {
-  const images = document.getElementsByClassName("giphy");
+  const images = document.getElementsByTagName("img");
   for (let image of images) {
     image.classList.add("rotate");
   }
 };
 
 const removeRotateClass = () => {
-  const images = document.getElementsByClassName("giphy");
+  const images = document.getElementsByTagName("img");
   for (let image of images) {
     image.classList.remove("rotate");
   }

@@ -105,7 +105,8 @@ nav ul li a {
   padding: 10px;
   width: 200px;
 }
-.giphy-container .rotate {
+
+.rotate {
   animation: rotation 2s infinite linear;
 }
 
