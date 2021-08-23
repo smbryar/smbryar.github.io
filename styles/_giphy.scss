@@ -1,8 +1,21 @@
-.giphy {
-  padding: 10px;
-  width: 200px;
+.giphy-container {
+  text-align: center;
+
+  .giphy {
+    padding: 10px;
+    width: 200px;
+  }
+
+  .rotate {
+    animation: rotation 2s infinite linear;
+  }
 }
 
-.giphy-container {
-  align-items: center;
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }

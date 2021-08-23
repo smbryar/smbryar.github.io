@@ -1,6 +1,6 @@
 const apiKey = "9pz3h3ta7uGNedW8NC3Be57G3tic3RnQ";
 
-fetch(`https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=cats&limit=10`)
+fetch(`https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=cats&limit=12`)
   .then((response) => response.json())
   .then((json) => {
     json.data

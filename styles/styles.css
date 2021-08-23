@@ -98,15 +98,25 @@ nav ul li a {
     margin: 20px 0;
   }
 }
-.giphy {
+.giphy-container {
+  text-align: center;
+}
+.giphy-container .giphy {
   padding: 10px;
   width: 200px;
 }
-
-.giphy-container {
-  align-items: center;
+.giphy-container .rotate {
+  animation: rotation 2s infinite linear;
 }
 
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 body {
   width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
